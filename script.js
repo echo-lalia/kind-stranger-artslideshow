@@ -41,7 +41,6 @@ const basicSubreddits = `
 `;
 
 results.innerHTML = basicSubreddits;
-closeWelcomeScreen();
 
 function openMenu() {
   window.removeEventListener('click', clickHandler);
@@ -138,6 +137,8 @@ function closeWelcomeScreen() {
     downloadNextPosts(startUrl);
   }, 1000);
 }
+
+closeWelcomeScreen();
 
 function downloadNextPost(url, after = subsInfo[subsInfo.length - 1][1]) {
   // title.innerText = new Array(title.innerText.length + 1).join('\u2060');
