@@ -41,6 +41,7 @@ const basicSubreddits = `
 `;
 
 results.innerHTML = basicSubreddits;
+closeWelcomeScreen();
 
 function openMenu() {
   window.removeEventListener('click', clickHandler);
@@ -135,7 +136,7 @@ function closeWelcomeScreen() {
 
   setTimeout(() => {
     downloadNextPosts(startUrl);
-  }, 1);
+  }, 1000);
 }
 
 function downloadNextPost(url, after = subsInfo[subsInfo.length - 1][1]) {
