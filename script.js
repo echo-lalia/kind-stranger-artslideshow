@@ -16,7 +16,7 @@ const menuClose = document.getElementById('menu-close');
 
 const screenToggle = document.getElementById('screenToggle');
 const slideshowToggle = document.getElementById('slideshow-toggle-button');
-slideshowToggle.checked = false;
+slideshowToggle.checked = true;
 
 const welcome = document.getElementById('welcome');
 
@@ -115,7 +115,7 @@ toggleButton.addEventListener('click', toggleNightMode);
 
 image.classList.remove('hidden');
 
-const startUrl = `https://www.reddit.com/r/itookapicture/hot.json?`;
+const startUrl = `https://www.reddit.com/r/Art+CreepyArt+DigitalPainting+IDAP+alternativeart+animation+blender/hot.json?`;
 let posts = [];
 let preloadURLs = [];
 let preloading;
