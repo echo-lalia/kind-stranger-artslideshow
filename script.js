@@ -755,7 +755,9 @@ async function keyboardButtonsHandler(e) {
   }
 }
 
-keyboardButtonsHandler(key.ArrowRight);
+window.dispatchEvent(new KeyboardEvent('keydown', {
+    'key': 'ArrowRight'
+}));
 
 async function clickHandler(e) {
   if (e.target.className === 'search') {
