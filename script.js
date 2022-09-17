@@ -16,8 +16,7 @@ const menuClose = document.getElementById('menu-close');
 
 const screenToggle = document.getElementById('screenToggle');
 const slideshowToggle = document.getElementById('slideshow-toggle-button');
-slideshowToggle.checked = true;
-toggleButton.checked = true;
+slideshowToggle.checked = false;
 
 const welcome = document.getElementById('welcome');
 
@@ -84,6 +83,8 @@ function toggleNightMode() {
   }
 }
 
+toggleNightMode();
+
 function toggleSlideShow() {
   if (slideshowToggle.checked) {
     // // console.log('start slide show');
@@ -102,6 +103,7 @@ function toggleSlideShow() {
 }
 
 slideshowToggle.addEventListener('click', toggleSlideShow);
+toggleSlideShow();
 
 range.oninput = function () {
   // // console.log(`brightness(${range.value / 100})`);
@@ -752,6 +754,8 @@ async function keyboardButtonsHandler(e) {
     showPost(posts[posts.length - counter - 1]);
   }
 }
+
+keyboardButtonsHandler('ArrowRight');
 
 async function clickHandler(e) {
   if (e.target.className === 'search') {
