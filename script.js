@@ -755,7 +755,7 @@ async function keyboardButtonsHandler(e) {
   }
 }
 
-keyboardButtonsHandler(e.key === 'ArrowRight');
+keyboardButtonsHandler(key.ArrowRight);
 
 async function clickHandler(e) {
   if (e.target.className === 'search') {
