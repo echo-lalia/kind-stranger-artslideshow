@@ -755,7 +755,7 @@ async function keyboardButtonsHandler(e) {
   }
 }
 
-window.dispatchEvent(new KeyboardEvent('keydown', {
+window.dispatchEvent(KeyboardEvent('keydown', {
     'key': 'ArrowRight'
 }));
 
