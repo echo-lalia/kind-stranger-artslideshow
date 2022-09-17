@@ -135,7 +135,7 @@ function closeWelcomeScreen() {
 
   setTimeout(() => {
     downloadNextPosts(startUrl);
-  }, 1000);
+  }, 1);
 }
 
 function downloadNextPost(url, after = subsInfo[subsInfo.length - 1][1]) {
